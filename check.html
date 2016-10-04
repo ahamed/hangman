@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		
+		<script>
+			function add(){
+				var wrd = document.getElementById("wrd").value;
+				//alert(wrd);
+							// Create a connection to the file.
+				/*var Connect = new XMLHttpRequest();
+				// Define which file to open and
+				// send the request.
+
+				// Place the response in an XML document.
+				Connect.open("GET", "data.xml", false);
+				Connect.setRequestHeader("Content-Type", "text/xml");
+				Connect.send();
+				var theDocument = Connect.responseXML;
+				var dictionary = theDocument.children[0];
+//				alert(dictionary.children[0].nodeName);
+				var newElement = theDocument.createElement("word");
+//				newElement.appendChild(theDocument.createTextNode("MYNAME"));
+				newElement.innerHTML = wrd;
+				dictionary.children[0].appendChild(newElement);
+				alert(dictionary.children[0].nodeValue);*/
+//				document.getElementsByTagName("dictionary")[0].appendChild(newElement);
+				////
+				
+				var xml = new XMLWriter();
+				xml.BeginNode("dictionary");
+				
+				
+			}
+			
+				
+		</script>
+	</head>
+	<body>
+		<input type="text" id="wrd">
+		<input type="button" id="add" value="Add" onclick="add()">
+	</body>
+</html>
