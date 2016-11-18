@@ -429,11 +429,12 @@
 					
                         
                     if(isWin){
-                        
+                        alert("Congratulations!");
                         window.location.href="resources/update.php";
                         
                     }
                         if(isLoss){
+                            alert("Sorry dude! You have to hang :(");
                             window.location.href="resources/updateonly.php";
                         }
 					
